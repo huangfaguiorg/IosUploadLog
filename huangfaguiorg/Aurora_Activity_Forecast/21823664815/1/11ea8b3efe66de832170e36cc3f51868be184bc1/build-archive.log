@@ -1,0 +1,69 @@
+Command line invocation:
+    /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/xcodebuild archive -workspace ./Aurora_Activity_Forecast.xcworkspace -scheme Aurora_Activity_Forecast -configuration Release -destination generic/platform=iOS -archivePath /Users/runner/work/Aurora_Activity_Forecast/Aurora_Activity_Forecast/build.xcarchive
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (6 targets)
+    Target 'Aurora_Activity_Forecast' in project 'Aurora_Activity_Forecast'
+        ➜ Implicit dependency on target 'Pods-Aurora_Activity_Forecast' in project 'Pods' via file 'Pods_Aurora_Activity_Forecast.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'HFGPurchasesKit' in project 'Pods' via options '-framework HFGPurchasesKit' in build setting 'OTHER_LDFLAGS'
+    Target 'Pods-Aurora_Activity_Forecast' in project 'Pods'
+        ➜ Explicit dependency on target 'HFGPurchasesKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'HFGPurchasesKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+    Target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMDevice' in project 'Pods' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/Aurora_Activity_Forecast/Aurora_Activity_Forecast/Aurora_Activity_Forecast/Resources/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: bd153292ec12734f30073bb42d94a70c
+Build description path: /Users/runner/Library/Developer/Xcode/DerivedData/Aurora_Activity_Forecast-gynvzlxgnyuxaeabmmxvauthooqi/Build/Intermediates.noindex/ArchiveIntermediates/Aurora_Activity_Forecast/IntermediateBuildFilesPath/XCBuildData/bd153292ec12734f30073bb42d94a70c.xcbuilddata
+/Users/runner/work/Aurora_Activity_Forecast/Aurora_Activity_Forecast/Aurora_Activity_Forecast.xcodeproj: error: No profile for team '87LBBKNAGS' matching 'appstore-6758372265-20260209114247519' found: Xcode couldn't find any provisioning profiles matching '87LBBKNAGS/appstore-6758372265-20260209114247519'. Install the profile (by dragging and dropping it onto Xcode's dock item) or select a different one in the Signing & Capabilities tab of the target editor. (in target 'Aurora_Activity_Forecast' from project 'Aurora_Activity_Forecast')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'Aurora_Activity_Forecast' from project 'Aurora_Activity_Forecast')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'HFGPurchasesKit' from project 'Pods')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'UMAPM' from project 'Pods')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'Pods-Aurora_Activity_Forecast' from project 'Pods')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'UMDevice' from project 'Pods')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'UMCommon' from project 'Pods')
+** ARCHIVE FAILED **
+
+
+The following build commands failed:
+	Archiving workspace Aurora_Activity_Forecast with scheme Aurora_Activity_Forecast
+(1 failure)
