@@ -1,0 +1,30 @@
+Running altool at path '/Applications/Xcode_16.4.app/Contents/SharedFrameworks/ContentDeliveryServices.framework/Frameworks/AppStoreService.framework/Support/altool'...
+2026-03-30 03:48:24.466 ERROR: [altool.600003B00080] [ContentDelivery.Uploader.600003B00080] Validation failed (409) Invalid Version. The build with the version “1.0.2” can’t be imported because a later version has been closed for new build submissions. Choose a different version number. (ID: 42d4b231-b666-4aa2-8ee9-9242f0d5eda4)
+2026-03-30 03:48:24.467 ERROR: [altool.600003B00080] [ContentDelivery.Uploader.600003B00080] Validation failed (409) Invalid Pre-Release Train. The train version '1.0.0' is closed for new build submissions (ID: 192756cb-f0fc-4ca9-804b-e5e4d548d52d)
+2026-03-30 03:48:24.468 ERROR: [altool.600003B00080] [ContentDelivery.Uploader.600003B00080] Validation failed (409) This bundle is invalid. The value for key CFBundleShortVersionString [1.0.0] in the Info.plist file must contain a higher version than that of the previously approved version [1.0.2]. Please find more information about CFBundleShortVersionString at https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleshortversionstring (ID: 6474a5f6-22a7-460e-9976-0d05979f7de5)
+2026-03-30 03:48:34.705  INFO: [altool.600003B00080] [ContentDelivery.Uploader.600003B00080] 
+=======================================
+UPLOAD FAILED with 3 errors, 0 warnings, 0 messages
+=======================================
+2026-03-30 03:48:34.708 ERROR: [altool.600003B00080] Error uploading 'CalSnap.ipa/CalSnap.ipa'.
+2026-03-30 03:48:34.708 ERROR: [altool.600003B00080] Validation failed Invalid Version. The build with the version “1.0.2” can’t be imported because a later version has been closed for new build submissions. Choose a different version number. (ID: 42d4b231-b666-4aa2-8ee9-9242f0d5eda4) (409)
+ {
+    NSLocalizedDescription = "Validation failed";
+    NSLocalizedFailureReason = "Invalid Version. The build with the version \U201c1.0.2\U201d can\U2019t be imported because a later version has been closed for new build submissions. Choose a different version number. (ID: 42d4b231-b666-4aa2-8ee9-9242f0d5eda4)";
+    NSUnderlyingError = "Error Domain=IrisAPI Code=-19241 \"Validation failed\" UserInfo={status=409, detail=Invalid Version. The build with the version \U201c1.0.2\U201d can\U2019t be imported because a later version has been closed for new build submissions. Choose a different version number., id=42d4b231-b666-4aa2-8ee9-9242f0d5eda4, code=STATE_ERROR.VALIDATION_ERROR, title=Validation failed, NSLocalizedFailureReason=Invalid Version. The build with the version \U201c1.0.2\U201d can\U2019t be imported because a later version has been closed for new build submissions. Choose a different version number., NSLocalizedDescription=Validation failed}";
+    "iris-code" = "STATE_ERROR.VALIDATION_ERROR";
+}
+2026-03-30 03:48:34.708 ERROR: [altool.600003B00080] Validation failed Invalid Pre-Release Train. The train version '1.0.0' is closed for new build submissions (ID: 192756cb-f0fc-4ca9-804b-e5e4d548d52d) (409)
+ {
+    NSLocalizedDescription = "Validation failed";
+    NSLocalizedFailureReason = "Invalid Pre-Release Train. The train version '1.0.0' is closed for new build submissions (ID: 192756cb-f0fc-4ca9-804b-e5e4d548d52d)";
+    NSUnderlyingError = "Error Domain=IrisAPI Code=-19241 \"Validation failed\" UserInfo={status=409, detail=Invalid Pre-Release Train. The train version '1.0.0' is closed for new build submissions, id=192756cb-f0fc-4ca9-804b-e5e4d548d52d, code=STATE_ERROR.VALIDATION_ERROR, title=Validation failed, NSLocalizedFailureReason=Invalid Pre-Release Train. The train version '1.0.0' is closed for new build submissions, NSLocalizedDescription=Validation failed}";
+    "iris-code" = "STATE_ERROR.VALIDATION_ERROR";
+}
+2026-03-30 03:48:34.708 ERROR: [altool.600003B00080] Validation failed This bundle is invalid. The value for key CFBundleShortVersionString [1.0.0] in the Info.plist file must contain a higher version than that of the previously approved version [1.0.2]. Please find more information about CFBundleShortVersionString at https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleshortversionstring (ID: 6474a5f6-22a7-460e-9976-0d05979f7de5) (409)
+ {
+    NSLocalizedDescription = "Validation failed";
+    NSLocalizedFailureReason = "This bundle is invalid. The value for key CFBundleShortVersionString [1.0.0] in the Info.plist file must contain a higher version than that of the previously approved version [1.0.2]. Please find more information about CFBundleShortVersionString at https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleshortversionstring (ID: 6474a5f6-22a7-460e-9976-0d05979f7de5)";
+    NSUnderlyingError = "Error Domain=IrisAPI Code=-19241 \"Validation failed\" UserInfo={status=409, detail=This bundle is invalid. The value for key CFBundleShortVersionString [1.0.0] in the Info.plist file must contain a higher version than that of the previously approved version [1.0.2]. Please find more information about CFBundleShortVersionString at https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleshortversionstring, id=6474a5f6-22a7-460e-9976-0d05979f7de5, code=STATE_ERROR.VALIDATION_ERROR, title=Validation failed, NSLocalizedFailureReason=This bundle is invalid. The value for key CFBundleShortVersionString [1.0.0] in the Info.plist file must contain a higher version than that of the previously approved version [1.0.2]. Please find more information about CFBundleShortVersionString at https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleshortversionstring, NSLocalizedDescription=Validation failed}";
+    "iris-code" = "STATE_ERROR.VALIDATION_ERROR";
+}
